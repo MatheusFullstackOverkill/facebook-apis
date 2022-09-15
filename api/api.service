@@ -2,12 +2,11 @@
 Description=API
 
 [Service]
-User=<user e.g. root>
+User=root
 WorkingDirectory=/root/facebook-apis/api
 Environment=FLASK_APP=/root/facebook-apis/api/main.py
 ExecStart=/root/facebook-apis/api/.venv/bin/flask run
 Restart=always
-# replace /home/user/.virtualenv/bin/python with your virtualenv and main.py with your script
 
 [Install]
 WantedBy=multi-user.target
