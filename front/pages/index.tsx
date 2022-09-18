@@ -13,7 +13,7 @@ export default function index() {
       `}}></script>
       <div dangerouslySetInnerHTML={{__html:`
         <fb:login-button 
-        scope="public_profile,email,pages_manage_metadata,pages_show_list,instagram_manage_insights,instagram_manage_comments"
+        scope="public_profile,email,pages_manage_metadata,pages_show_list,pages_read_user_content,pages_read_engagement"
         onlogin="checkLoginState();">
         </fb:login-button>
       `}}></div>
